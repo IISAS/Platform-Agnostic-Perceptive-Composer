@@ -1,0 +1,22 @@
+services:
+  pipeline-composer:
+    build: .
+    ports:
+      - "${PORT:-6969}:6969"
+    environment:
+      - CHAT_APP_TOKEN=${CHAT_APP_TOKEN}
+      - LLM_BASE_URL=${LLM_BASE_URL}
+      - LLM_API_KEY=${LLM_API_KEY}
+    networks:
+      - domino
+      - postgres
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  domino:
+    external: true
+    name: ${DOMINO_NETWORK}
+  postgres:
+    external: true
+    name: ${POSTGRES_NETWORK}
