@@ -4,6 +4,8 @@
 
 A conversational AI service that translates natural language into executable [Domino](https://github.com/Tauffer-Consulting/domino) data processing workflows. Users describe what they want to do with their data; the system figures out the steps and wires them together.
 
+This is a standalone service that is run as a separate API. It needs to be run together with the modified implementation of Domino done by IISAS.
+
 ## How it works
 
 Three LLM agents collaborate in a pipeline:
