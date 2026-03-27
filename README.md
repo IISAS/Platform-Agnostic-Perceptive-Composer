@@ -1,5 +1,7 @@
 # LLM Inference — SPICE Pipeline Composer
 
+![Demo](images/demo_PPC_spedup.gif)
+
 A conversational AI service that translates natural language into executable [Domino](https://github.com/Tauffer-Consulting/domino) data processing workflows. Users describe what they want to do with their data; the system figures out the steps and wires them together.
 
 ## How it works

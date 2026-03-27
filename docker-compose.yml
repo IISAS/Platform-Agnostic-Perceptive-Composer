@@ -1,5 +1,6 @@
 services:
   pipeline-composer:
+    container_name: pipeline-composer
     build: .
     ports:
       - "${PORT:-6969}:6969"
